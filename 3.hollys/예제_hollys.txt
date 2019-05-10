@@ -1,3 +1,0 @@
-http://anonyment.dothome.co.kr/page/page1.html
-
-<input type ="text" placehorder="³»¿ë">
