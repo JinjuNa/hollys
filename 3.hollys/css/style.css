@@ -1,0 +1,397 @@
+@charset 'utf-8';
+ 
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-size: 12px;
+    color:#6f6f6f;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+header{
+    width:940px;
+    height:90px;
+    margin:0 auto;
+    position:relative;
+    padding-top: 50px;
+}
+
+h1 {
+    text-align:center;
+    
+    /*a와 이미지는 인라인요소기 때문에 감싸고 있는 부모태그에게 text-align 속성을 주면 움직임!!!*/
+}
+.gnb{
+   
+    font-size:0;
+    margin-top:10px;
+}
+
+.gnb li{
+    /* font-size:14px; */
+    display: inline-block; /*블록요소의 특징을 계속 유지하면서, 인라인 정렬값을 가짐*/
+    margin:0 35px;
+}
+
+.util{
+    position:absolute;
+    top:15px;
+    right:0px;
+    font-size: 12px;
+    color:#6f6f6f;
+
+}
+
+.util:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.util li{
+    float:left;
+    margin-left:25px;
+}
+
+.util li:first-child{
+    margin-left:0px;
+
+}
+.subutil{
+    position:absolute;
+    top:0;
+    left:0;
+    
+}
+
+.subutil li:last-child{
+    margin-top:15px;
+    margin-left:15px;
+}
+
+.subutil:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.subutil li{
+    float:left;
+}
+
+/*header*/
+
+.mainbanner a{
+    display:block;
+    height:480px;
+    background-image: url(../images/mainbn.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size:0px;
+}
+
+/*mainbanner*/
+
+.con{
+    width: 940px;
+    margin: 0 auto;
+    margin-top:45px;
+}
+.con:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.con .item{
+    float:left;
+}
+
+.con .fran{
+    text-align: center;
+    width:205px;
+    margin-right:35px;
+}
+
+.con .fran h3{
+    text-align: left;
+    margin-bottom:30px;
+}
+
+.con .mall{
+    width:445px;
+    margin-right:35px;
+}
+.con .mall h3{
+    margin-bottom:12px;
+}
+
+.con .mall p{
+    color:#6f6f6f;
+}
+
+.con_mall{
+    margin-top:20px;
+}
+.con_mall:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.con_mall li{
+    width:140px;
+    float:left;
+    background-image:url(../images/bg_bar.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    
+    height:120px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.con_mall li:first-child{
+    padding-top:5px;
+    background: none;
+}
+
+.con_mall li:last-child{
+    padding-top:5px;
+}
+
+.con_mall li p{
+    
+    position: absolute;
+    width:100%;
+    left:0;
+    bottom:0;
+}
+
+.con .store{
+    width:205px;
+}
+
+.con .store h3{
+    margin-bottom:12px;
+}
+
+.con .store p{
+    margin-bottom:16px;
+}
+
+/*con*/
+.subbanner{
+    width:940px;
+    margin:0 auto;
+    margin-top:30px;
+}
+
+.subbanner:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.subbanner li {
+    float:left;
+}
+
+/*subbanner*/
+
+.con2{
+    width: 940px;
+    margin:0 auto;
+    margin-top:30px;
+}
+.con2:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.con2 .item2 {
+    width: 195px;
+    float:left;
+    margin-right:45px;
+}
+
+.con2 .item2:last-child{
+    margin-right:0px;
+}
+
+.con2 .item2 h3{
+    margin-bottom : 12px;
+}
+
+.con2 .news li{
+    margin-bottom:4px;
+}
+
+.con2 .news li a{
+    display: block;
+    width:144px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.con2 .news li span{
+    float: right;
+}
+
+.con2 .news li:after{
+    content:'';
+    clear: both;
+    display: block;
+}
+.con2 .ico_quick:after{
+    content: '';
+    display:block;
+    clear:both;
+}
+
+.con2 .ico_quick ul{
+    margin-top:20px;
+}
+.con2 .ico_quick li{
+    float:left;
+    display:inline-block;
+    text-align:center;
+    background-image: url(../images/bg_bar.png);
+    background-repeat: no-repeat;
+    padding-right:5px;
+    padding-left:5px;
+}
+
+.con2 .ico_quick li:last-child{
+    padding-right:0px;
+}
+.con2 .ico_quick li:first-child{
+    padding-left:0px;
+    background-image: none;
+}
+
+
+.arrow img{
+    vertical-align: middle;
+    /*
+    1. 그림과 글자를 정렬
+    2. 이미지가 가지는 일종의 정렬값
+    */
+}
+
+/*con2*/
+.con3 {
+    width: 940px;
+    margin:0 auto;
+    border-top: 2px solid #b5121b;
+    margin-top:45px;
+    padding-top:35px;
+    margin-bottom:85px;
+}
+
+.con3 .con3_tit{
+    margin-bottom:25px;
+}
+.con3 .con3_tit:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.con3 .con3_tit .item{
+    float:left;
+}
+
+.con3 h3{
+    margin-right:10px;
+}
+
+.con3 .sns:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.con3 .sns li{
+    float:left;
+    margin-right:5px;
+    margin-left:5px;
+}
+
+
+.con3 .live:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.con3 .live li{
+    width: 205px;
+    float:left;
+    margin-right:30px;
+}
+
+.con3 .live li .time{
+    color:#08f;
+    display: block;
+}
+
+.con3 .live li p{
+    width:140px;
+    float:right;
+}
+
+/*con3*/
+
+footer {
+    background-image: url(../images/bg_pat.png)
+}
+footer .footer_con{
+    width:940px;
+    margin: 0 auto;
+    padding-top:20px;
+    padding-bottom:30px;
+}
+
+footer .footer_con:after{
+    display:block;
+    content:'';
+    clear:both;
+}
+
+footer .footer_con li{
+    float:left;
+    color:white;
+    font-style:bold;
+    font-size:15px;
+    
+}
+
+footer .footer_con li:after{
+    content:'|';
+    margin-right:5px;
+    margin-left:5px;
+}
+
+footer .footer_con li:last-child:after{
+    content:none;
+}
+
+address {
+    font-style: normal;
+    color:rgba(255,255,255,0.5);
+    margin-top:40px;
+}
+
+.copyright { 
+    margin-top:20px;
+}
